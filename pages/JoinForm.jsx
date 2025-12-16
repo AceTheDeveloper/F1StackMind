@@ -147,7 +147,7 @@ function JoinForm() {
                 onChange={handleChange}
                 onFocus={() => setFocusedField("email")}
                 onBlur={() => setFocusedField("")}
-                placeholder="juan.delacruz@example.com"
+                placeholder="baso.presilida.ui@phinmaed.com"
                 className={`w-full rounded-xl border ${
                   focusedField === "email"
                     ? "border-indigo-500 ring-2 ring-indigo-500/20"

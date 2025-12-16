@@ -1,6 +1,6 @@
-function OfficerCard({ img, name, position }) {
+function OfficerCard({ img, name, position, delay }) {
   return (
-    <div className="flex w-full items-center gap-4 rounded-xl border border-neutral-800 bg-neutral-900 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl md:w-[330px]">
+    <div className="flex w-full items-center gap-4 rounded-xl border border-neutral-800 bg-neutral-900 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl md:w-[330px]" data-aos="fade-up" data-aos-delay={delay}>
       {/* Image */}
       <img
         src={img}
