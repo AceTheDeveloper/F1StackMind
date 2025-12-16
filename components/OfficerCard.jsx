@@ -1,24 +1,24 @@
-import React from 'react'
-
-function OfficerCard({img, name, position}) {
+function OfficerCard({ img, name, position }) {
   return (
-    <div className='flex items-center gap-4 bg-neutral-900 rounded-lg shadow-md p-4 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-neutral-800 sm:w-full md:w-77.5 '>
-      {/* image */}
-      <div className='shrink-0'>
-        <img 
-          src={img} 
-          alt={name} 
-          className='h-16 w-16 rounded-full object-cover border-2 border-neutral-700 ring-2 ring-neutral-800'
-        />
-      </div>
-      
-      {/* Name and Position */}
-      <div className='flex-1'>
-        <p className='font-semibold text-white text-lg tracking-tight'>{name}</p>
-        <p className='text-neutral-400 text-sm mt-1'>{position}</p>
+    <div className="flex w-full items-center gap-4 rounded-xl border border-neutral-800 bg-neutral-900 p-4 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl md:w-[330px]">
+      {/* Image */}
+      <img
+        src={img}
+        alt={name}
+        className="h-16 w-16 shrink-0 rounded-full border-2 border-neutral-700 bg-neutral-800 object-cover ring-2 ring-neutral-800"
+      />
+
+      {/* Text */}
+      <div className="min-w-0">
+        <p className="truncate text-lg font-semibold tracking-tight text-white">
+          {name}
+        </p>
+        <p className="mt-1 text-sm text-neutral-400">
+          {position}
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default OfficerCard
+export default OfficerCard;

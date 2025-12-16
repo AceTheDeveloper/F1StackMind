@@ -1,5 +1,5 @@
 import React from 'react'
-import nicole from "../src/assets/img/lampa.png"
+import nicole from "../src/assets/img/lampa-removebg-preview.png"
 import doc from "../src/assets/img/Doc.jpg"
 import akil from "../src/assets/img/Akil.jpg"
 
@@ -17,7 +17,7 @@ function Advisers() {
     
     <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-8 shadow-lg text-center hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-2">
       <img src={nicole} alt="Nicole Lampa"
-        className="rounded-full object-cover border-4 border-white/10 shadow-md mx-auto mb-6" style={{ height: "225px", width: "225px" }} />
+        className="rounded-full object-cover border-4 border-white/10 shadow-md mx-auto mb-6 bg-white" style={{ height: "225px", width: "225px" }} />
       <h3 className="text-xl font-bold">Nicole Lampa</h3>
       <p className="text-indigo-400 text-sm mb-3">Faculty Adviser</p>
       <p className="text-neutral-300 text-sm leading-relaxed">
