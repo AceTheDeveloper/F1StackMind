@@ -1,6 +1,6 @@
 import React from "react";
 import OfficerCard from "../components/OfficerCard";
-import CIO from '../src/assets/img/bonnie-removebg-preview.png'
+import CIO from '../src/assets/img/bonnie_baddie_pic.jpg'
 import placeholder from '../src/assets/img/placeholder.jpg'
 import arwin from '../src/assets/img/paldo-removebg-preview.png'
 
