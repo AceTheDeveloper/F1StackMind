@@ -20,7 +20,6 @@ export function ChatWidget() {
     async function sendMessage(message) {
         if (isTyping) return;
         if (!message.trim()) return;
-
         setMessages((prev) => [...prev, { role: "user", text: message }]);
         if (textareaRef.current) textareaRef.current.style.height = "auto";
         setInput("");
