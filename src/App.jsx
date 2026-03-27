@@ -8,6 +8,7 @@ import Advisers from '../pages/Advisers'
 import Officers from '../pages/Officers'
 import JoinForm from '../pages/JoinForm'
 import Footer from '../pages/Footer'
+import { ChatWidget } from '../components/ChatWidget'
 import { Toaster } from 'react-hot-toast'
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Advisers />
         <Officers />
         <JoinForm />
+        <ChatWidget />
     <Footer />
 
     </>
