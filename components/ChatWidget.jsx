@@ -20,10 +20,11 @@ export function ChatWidget() {
     async function sendMessage(message) {
         if (isTyping) return;
         if (!message.trim()) return;
+
         setMessages((prev) => [...prev, { role: "user", text: message }]);
         if (textareaRef.current) textareaRef.current.style.height = "auto";
         setInput("");
-        setIsTyping(true);
+        setIsTyping(true);        
 
         try {
             const response = await chatApi.post("/messages", {
@@ -41,6 +42,7 @@ export function ChatWidget() {
                 }]);
                 return;
             }
+            console.log(error);
 
             setMessages((prev) => [...prev, {
                 role: "bot",

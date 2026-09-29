@@ -1,36 +1,29 @@
-import React, { useEffect } from 'react'
-import Header from '../pages/Header'
-import Hero from '../pages/Hero'
-import About from '../pages/About'
-import MV from '../pages/MV'
-import Events from '../pages/Events'
-import Advisers from '../pages/Advisers'
-import Officers from '../pages/Officers'
-import JoinForm from '../pages/JoinForm'
-import Footer from '../pages/Footer'
-import { ChatWidget } from '../components/ChatWidget'
-import { Toaster } from 'react-hot-toast'
+
+import { useEffect } from "react"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import HomeLayout from "../layout/HomeLayout"
+import Home from "../pages/Home"
+import Members from "../pages/Members"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+const router = createBrowserRouter([
+  {
+    element: <HomeLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: '/members', element: <Members /> }
+    ]
+  }
+])
+
 function App() {
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
-
-  return (
-    <>
-    <Toaster position="top-right" />
-
-    <Header/>
-        <Hero />
-        <About />
-        <MV />
-        <Events />
-        <Advisers />
-        <Officers />
-        <JoinForm />
-        <ChatWidget />
-    <Footer />
-
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App

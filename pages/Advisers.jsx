@@ -1,7 +1,8 @@
 import React from 'react'
 import nicole from "../src/assets/img/lampa-removebg-preview.png"
 import doc from "../src/assets/img/Doc.jpg"
-import akil from "../src/assets/img/Akil.jpg"
+// import akil from "../src/assets/img/Akil.jpg"
+import janine from "../src/assets/officers-2627/Ma'am Janine.jpg"
 
 function Advisers() {
   return (
@@ -41,12 +42,12 @@ function Advisers() {
     </div>
 
     <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-8 shadow-lg text-center hover:shadow-indigo-500/20 transition-all duration-500 hover:-translate-y-2">
-      <img src={akil} alt="Melene Akil"
+      <img src={janine} alt="Janine Anne Silvias"
         className="rounded-full object-cover border-4 border-white/10 shadow-md mx-auto mb-6" style={{ height: "225px", width: "225px" }} />
-      <h3 className="text-xl font-bold">Melene Akil</h3>
+      <h3 className="text-xl font-bold">Janine Anne Silvias</h3>
       <p className="text-indigo-400 text-sm mb-3">Faculty Adviser</p>
       <p className="text-neutral-300 text-sm leading-relaxed">
-        Melene focuses on teamwork, critical thinking, and technical excellence. 
+        Janine focuses on teamwork, critical thinking, and technical excellence. 
         She plays a key role in mentoring students on collaborative projects and 
         guiding them toward success in the IT field.
       </p>

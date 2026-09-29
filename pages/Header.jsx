@@ -46,34 +46,42 @@ function Header() {
         >
           <ul className="flex flex-col space-y-4 uppercase md:flex-row md:space-x-8 md:space-y-0">
             <li>
-              <a href="#home" className="text-sm text-neutral-300 hover:text-white">
+              <a href="/#home" className="text-sm text-neutral-300 hover:text-white">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="text-sm text-neutral-300 hover:text-white">
+              <a href="/#about" className="text-sm text-neutral-300 hover:text-white">
                 About Us
               </a>
             </li>
             <li>
               <a
-                href="#mission-vision"
+                href="/#mission-vision"
                 className="text-sm text-neutral-300 hover:text-white"
               >
                 Mission & Vision
               </a>
             </li>
             <li>
-              <a href="#events" className="text-sm text-neutral-300 hover:text-white">
+              <a href="/#events" className="text-sm text-neutral-300 hover:text-white">
                 Events
               </a>
             </li>
             <li>
               <a
-                href="#adviser"
+                href="/#adviser"
                 className="text-sm text-neutral-300 hover:text-white"
               >
                 Advisers & Officers
+              </a>
+            </li>
+            <li>
+              <a
+                href="/members"
+                className="text-sm text-neutral-300 hover:text-white"
+              >
+                Members
               </a>
             </li>
 

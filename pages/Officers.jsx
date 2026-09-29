@@ -1,36 +1,43 @@
 import React from "react";
 import OfficerCard from "../components/OfficerCard";
-import CIO from '../src/assets/img/bonnie_baddie_pic.jpg'
-import placeholder from '../src/assets/img/placeholder.jpg'
-import arwin from '../src/assets/img/paldo-removebg-preview.png'
+import CIO from '../src/assets/officers-2627/mj.jpg'
+// import placeholder from '../src/assets/img/placeholder.jpg'
+import ken from '../src/assets/officers-2627/ken.jpg'
+import maverick from '../src/assets/officers-2627/ako.jpg'
 
 // Executive Officers
-import rybelle from '../src/assets/img/rybelle-removebg-preview.png'
-import alyanah from '../src/assets/img/alyanah.png'
-import shanel from '../src/assets/img/Shanel-removebg-preview.png'
+import jaden from '../src/assets/officers-2627/ochida.JPG'
+import operio from '../src/assets/officers-2627/operio.jpg'
+
+// Operation Officers
+import kiana from '../src/assets/officers-2627/kiana.jpg'
+import capalla from '../src/assets/officers-2627/capalla.jpg'
 
 // Project Managers
-import justin from '../src/assets/img/justine-removebg-preview.png'
-import amiel from '../src/assets/img/amiel-removebg-preview.png'
-import elgie from '../src/assets/img/Elgie-removebg-preview.png'
-import maverick from '../src/assets/img/maverick.png'
+import gab from '../src/assets/officers-2627/gab.jpg'
+import echalar from '../src/assets/officers-2627/echalar.jpg'
+import luegi from '../src/assets/officers-2627/luegi.jpg'
 
 const leader_officers = [
-  {img : placeholder, name : 'Kristelle Laurente', position : 'Lead Operations Officer'},
-  {img : arwin, name : 'Arwin Clyde B. Simondac', position : 'Lead Technologist Officer'},
+  {img : ken, name : 'Ken Raymond Reyes', position : 'Lead Operations Officer'},
+  {img : maverick, name : 'Maverick Barrientos', position : 'Lead Technologist Officer'},
 ];
 
 const executive_officers = [
-  {img:rybelle, name:'Rybelle V. Ramos', position : 'Secretary'},
-  {img:alyanah, name:'Alyanah Dale Estillore', position : 'Assistant Secretary'},
-  {img:shanel, name:'Shanel Capalla', position : 'Treasurer'},
+  {img: jaden, name:'Jaden Ochida', position : 'Secretary'},
+  {img: operio, name:'Shanelle Operio', position : 'Assistant Secretary'},
+  {img: capalla, name:'Shanel Capalla', position : 'Treasurer'},
+]
+
+const operation_officers = [
+  {img: kiana, name: "Kiana Francisco", position: 'Operations Officer'},
+  {img: capalla, name: "Shanel Capalla", position: 'Operations Officer'},
 ]
 
 const project_managers = [
-  {img : arwin, name : 'Arwin Clyde B. Simondac', position : 'Systems Development Project Manager'},
-  {img : justin, name : 'Justin Dela Vega', position : 'Artificial Intelligence Project Manager'},
-  {img : amiel, name : 'Amiel Castro', position : 'Cyber Security Project Manager'},
-  {img : elgie, name : 'Elgie Delos Reyes', position : 'Game Development Project Manager'},
+  {img : luegi, name : 'Luegi Rivera', position : 'Web Development Project Manager'},
+  {img : echalar, name : 'Marc Cedric Echalar', position : 'Cyber Security Project Manager'},
+  {img : gab, name : 'Rud Gabriel Baoy', position : 'Game Development Project Manager'},
   {img : maverick, name : 'Maverick Barrientos', position : 'Micro Controllers/Arduino Project Manager'},
 ]
 
@@ -57,7 +64,7 @@ function Officers() {
             <div className="flex justify-center" data-aos="fade-up">
               <OfficerCard
                 img={CIO}
-                name="Bonnie Boy Franco III"
+                name="Mary Joy Cabanas"
                 position="Chief Information Officer"
               />
             </div>
@@ -79,6 +86,18 @@ function Officers() {
 
           <div className="flex flex-wrap justify-center gap-6">
             {executive_officers.map((o, index) => (
+              <OfficerCard key={index} {...o} delay={index * 150}/>
+            ))}
+          </div>
+        </div>
+
+        <div className="px-4">
+          <p className="mb-6 sm:mb-8 text-center text-xl sm:text-2xl font-semibold">
+            Operation Officers
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            {operation_officers.map((o, index) => (
               <OfficerCard key={index} {...o} delay={index * 150}/>
             ))}
           </div>
