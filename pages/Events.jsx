@@ -18,9 +18,7 @@ function Events() {
       <span className="text-indigo-400 font-semibold text-sm uppercase tracking-widest">October 9, 2026</span>
       <h3 className="text-2xl font-bold mt-2 mb-4">Reed Elsevier Hackathon</h3>
       <p className="text-neutral-400 mb-6">
-        A premier innovation summit highlighting the future of intelligent systems. Explore cutting-edge AI
-        integration, witness live demos, and gain insights from industry experts driving the next wave of
-        technological breakthroughs.
+        A one-day, team-based startup hackathon focused on building innovative AI solutions. Participants will have the opportunity to use AWS technologies, collaborate with their team, and compete for recognition and prizes.
       </p>
     </div>
 
@@ -29,20 +27,16 @@ function Events() {
       <span className="text-pink-400 font-semibold text-sm uppercase tracking-widest">October 9, 2026</span>
       <h3 className="text-2xl font-bold mt-2 mb-4">Reed Elsevier Tech Talk</h3>
       <p className="text-neutral-400 mb-6">
-        A groundbreaking provincial hackathon where students from across Iloilo will team up to solve
-        real-world challenges. Collaborate with professional mentors, pitch your ideas, and showcase your
-        skills in a high-energy, competitive environment.
+        An engaging tech talk exploring artificial intelligence, its applications, and its growing role in technology, with an opportunity for participants to interact and ask questions.
       </p>
     </div>
 
     <div className="bg-linear-to-br from-neutral-800 to-neutral-900 border border-neutral-700 rounded-2xl p-6 shadow-lg hover:shadow-green-500/20 transition-all duration-300"
       data-aos="fade-up" data-aos-delay="300">
-      <span className="text-green-400 font-semibold text-sm uppercase tracking-widest">October 14, 2026</span>
-      <h3 className="text-2xl font-bold mt-2 mb-4">Iloilo Provincial Hackathon</h3>
+      <span className="text-green-400 font-semibold text-sm uppercase tracking-widest">October 15, 2026</span>
+      <h3 className="text-2xl font-bold mt-2 mb-4">PHINMA UI CITE Week Hackathon</h3>
       <p className="text-neutral-400 mb-6">
-        An exciting collaboration with Google to inspire future innovators. Experience the "Hour of Code"
-        movement across ASEAN, learn from Google experts, and discover how technology can empower
-        communities at scale.
+        A team-based hackathon where BSIT students tackle randomly assigned topics using any technology, including AI. Participants will collaborate, solve problems under pressure, and present their solutions for judging.
       </p>
     </div>
 
