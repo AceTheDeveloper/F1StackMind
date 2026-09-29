@@ -1,5 +1,5 @@
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const members = [
   "Leonoras, Al Philip",
@@ -37,6 +37,8 @@ const members = [
   "Stephen, Guelos"
 ];
 
+const CONFETTI_COLORS = ["#6366f1", "#818cf8", "#a5b4fc", "#ffffff", "#c7d2fe"]
+
 function MemberCard ({ name }) {
   return (
     <div
@@ -56,6 +58,40 @@ function Members () {
   const filteredMembers = members.filter((member) => 
     member.toLowerCase().includes(search.toLowerCase())
   )
+
+  useEffect(() => {
+    let cancelled = false
+    let timer
+
+    import("canvas-confetti").then(({ default: confetti }) => {
+      if (cancelled) return
+
+      const burst = (x, angle) =>
+        confetti({
+          particleCount: 60,
+          angle,
+          spread: 65,
+          startVelocity: 55,
+          origin: { x, y: 0.75 },
+          colors: CONFETTI_COLORS,
+          disableForReducedMotion: true,
+        })
+
+      burst(0, 60)
+      burst(1, 120)
+
+      // Second, smaller wave so it feels like a pop, not a single puff
+      timer = setTimeout(() => {
+        burst(0.1, 70)
+        burst(0.9, 110)
+      }, 250)
+    })
+
+    return () => {
+      cancelled = true
+      clearTimeout(timer)
+    }
+  }, [])
 
   return (
     <div className="bg-neutral-900 text-white min-h-[calc(100vh-80px)] flex items-center px-6 py-16 md:py-0">
