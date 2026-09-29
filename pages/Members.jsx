@@ -59,7 +59,7 @@ function Members () {
 
   return (
     <div className="bg-neutral-900 text-white min-h-[calc(100vh-80px)] flex items-center px-6 py-16 md:py-0">
-      <div className="items-center justify-center">
+      <div className="items-center justify-center py-16">
         <div>
           <div
             className="mb-4 inline-flex items-center gap-2 px-4 py-1 border border-indigo-500/40 rounded-full bg-indigo-500/10 text-sm tracking-wide text-indigo-300 uppercase"
